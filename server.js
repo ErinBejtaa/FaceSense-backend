@@ -11,8 +11,8 @@ const db = knex({
 	connection:{
 		host : '127.0.0.1',
 		user: 'postgres',
-		password : 'devgruhk416',
-		database : 'smart-brain'
+		password : 'your db password',
+		database : 'facesense'
 	}
 });
 
@@ -108,22 +108,6 @@ app.put('/image',(req,res)=>{
 	.catch(err => res.status(400).json('unable to get entries'))
 	
 })
-
-/*bcrypt.hash("bacon", hash, function(err,res) {
-     //hashing password
-});
-bcrypt.compare("veggies", hash, function(err,res) {
-     //password check --> res = false
-});
-bcrypt.compare("bacon", hash, function(err,res){
-	//password check --> res = false
-});
-bcryptjs Password Hashing
-*/
-
-
-
-
 
 app.listen(3000, ()=> {
 	console.log('working');
