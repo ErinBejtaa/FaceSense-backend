@@ -3,6 +3,6 @@
 1. Clone this repo
 2. Run `npm install`
 3. Run `npm start`
-4. You must add your own database in the db variable in "server.js"
+4. You must add your own database in the db variable in `server.js`
 
-You can get a Clarifai API key [here](https://www.clarifai.com/)
+
