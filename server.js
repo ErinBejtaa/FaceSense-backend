@@ -9,10 +9,10 @@ const bcrypt = require('bcryptjs');
 const db = knex({
 	client: 'pg',
 	connection:{
-		host : '127.0.0.1',
-		user: 'postgres',
+		host : '127.0.0.1', //localhost
+		user: 'your db username', 
 		password : 'your db password',
-		database : 'facesense'
+		database : 'db name'
 	}
 });
 
